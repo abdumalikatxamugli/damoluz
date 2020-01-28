@@ -1,12 +1,8 @@
 .DachaListItem{
-	-ms-flex: 0 0 33.333333%;
-	flex: 0 0 33.333333%;
-	max-width: 33.333333%;
-	position: relative;
-	width: 100%;
-	padding-right: 7.5px;
-	padding-left: 7.5px;
-	margin-top:7.5px;
+	
+}
+.DachaDescription{
+	padding:10px 15px;
 }
 .col-md-12{
 	-ms-flex: 0 0 100%;
@@ -18,9 +14,26 @@
 	padding-left: 7.5px;
 	margin-top:7.5px;
 }
-
+.col-md-4{
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	position: relative;
+	width: 100%;
+	padding-right: 7.5px;
+	padding-left: 7.5px;
+	margin-top:7.5px;
+}
+.DachaListItem{
+	margin-bottom:15px;
+	cursor: pointer;
+}
+.DachaListItem:hover{
+	box-shadow:0px 0px 5px 0px grey;
+}
 .DachaListItem img{
 	max-width: 100%;
+
 }
 .qulayliklar{
 	display: inline-block;

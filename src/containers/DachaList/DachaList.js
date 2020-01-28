@@ -8,19 +8,23 @@ class DachaList extends Component {
   state={
   	searchName:"",
   	minPrice:0,
-  	maxPrice:10000000
+  	maxPrice:1000000
   }
   searchNameChangeHandler=(event)=>{
   	this.setState({searchName:event.target.value});
   	
   }
-  minPriceHandler=(event)=>{
-  	this.setState({minPrice:event.target.value});
-  	
+  lowerMinPrice=()=>{
+  	this.setState({minPrice:this.state.minPrice-50000})
   }
-  maxPriceHandler=(event)=>{
-  	this.setState({maxPrice:event.target.value});
-  	
+  higherMinPrice=()=>{
+  	this.setState({minPrice:this.state.minPrice+50000})
+  }
+  lowerMaxPrice=()=>{
+  	this.setState({maxPrice:this.state.maxPrice-50000})
+  }
+  higherMaxPrice=()=>{
+  	this.setState({maxPrice:this.state.maxPrice+50000})
   }
   render(){
   	const filtered=dachalist.filter(entry=>(entry.name.search(this.state.searchName)>=0
@@ -39,10 +43,12 @@ class DachaList extends Component {
 			
 			<div className="row">
 				<Filter searchNameChange={this.searchNameChangeHandler}
-						minPriceHandler={this.minPriceHandler}
-						maxPriceHandler={this.maxPriceHandler}
 						maxPrice={this.state.maxPrice}
 						minPrice={this.state.minPrice}
+						lowerMinPrice={this.lowerMinPrice}
+						higherMinPrice={this.higherMinPrice}
+						lowerMaxPrice={this.lowerMaxPrice}
+						higherMaxPrice={this.higherMaxPrice}
 				/>
 			</div>	
 			<div className="row">
