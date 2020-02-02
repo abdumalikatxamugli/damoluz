@@ -1,3 +1,5 @@
-import DachaList from './DachaList/DachaList'
+import MainPage from './MainPage/MainPage'
+import Dachalar from './Dachalar/Dachalar'
+import Dacha from './Dacha/Dacha'
 
-export {DachaList}
+export {MainPage, Dachalar, Dacha}

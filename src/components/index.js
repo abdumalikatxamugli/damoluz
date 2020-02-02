@@ -1,4 +1,4 @@
-import DachaListItem from './DachaListItem/DachaListItem'
-import Filter from './Filter/Filter'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
-export {DachaListItem, Filter}
+export {Header, Footer}
