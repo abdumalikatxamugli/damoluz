@@ -10,7 +10,7 @@ export class MainPage extends Component {
 			 <section className={classes.mainSlider}>
 			 	<FullCont>
 			 		<div className="col-md-12">
-			 			
+			 			here we go
 			 		</div>
 			 	</FullCont>
 			 </section>
